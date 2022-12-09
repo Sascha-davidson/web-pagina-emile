@@ -79,6 +79,11 @@ header .input-types {
   box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
 
+form{
+  display: flex;
+  gap: 3rem;
+}
+
 header .input-types input[type="text"] {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #1f2937;
