@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* HTML */
+
+:root {
+  --yello: #ffd05f;
+  --light-blue: #45becd;
+  --green: #25ae93;
+  --blue: #606eb3;
+
+  --magenta: #e30059;
+  --dark-magenta: #b9005f;
+
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "fira-sans", sans-serif;
+  line-height: 1.4;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0b0f19;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+strong {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+/* header */
+
+header {
+  display: flex;
+  gap: 2rem;
+
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+/* input types */
+
+header .input-types {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+}
+
+header .input-types input[type="text"] {
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #1f2937;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.125rem;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+}
+
+header form input[type="button"] {
+  background-color: #ff7503;
+  color: #fff;
+  height: 100%;
+  width: auto;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+header form input[type="button"]:hover {
+  background-color: #b25202;
+}
+
+/* main */
+
+main {
+  padding: 1rem 5rem 1rem 5rem;
+  width: 100%;
+  height: calc(100% - 210px - 2rem);
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.folder-container {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+  overflow: hidden;
+}
+
+.folder-container .folder {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: #191E2C;
+  padding: 0 4rem;
+  margin: 0 -1rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);}
+
+.folder-container .folder h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.folder-container .folder-content {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+}
+
+.menu-container {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-container .menu {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: #191E2C;
+  padding: 0 4rem;
+  margin: 0 -1rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+main .menu-container .menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+main .menu-container .menu ul li {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+main .menu-container .menu ul li:hover {
+  padding-bottom: 4rem;
+  background-color: #1f2937;
+  border-radius: 10px;
+}
+
+main .menu-container .menu-content {
+  width: 100%;
+  height: calc(100% - 80px);
+  padding: 3rem;
+}
+
+hr {
+  height: 5px;
+  border: none;
+  background-color: #374256;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 15px;
+}
+
+.container-item {
+  background-color: #1f2937;
+}
+
+/* main {
+  height: 100%;
+  margin: 1rem 3rem 1rem 3rem;
+  
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: 5rem 100%;
+  gap: 1rem;
+  background-color: #0b0f19;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+main .folder-title {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  background-color: #1f2937;
+}
+
+main .folder-title p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main .menu {
+  background-color: #1f2937;
+}
+
+main .content-title ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+main .content-title ul li {
+  padding: 0 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  
+}
+
+main .content-title {
+  background-color: #1f2937;
+}
+
+main .content {
+  background-color: #1f2937;
+  height: 100%;
+} */
